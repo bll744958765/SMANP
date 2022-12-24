@@ -3,7 +3,7 @@
 """
 Spatial Multi-attention Neural Process
 """
-from attention import *
+from attention_smanp import *
 import torch
 import torch.nn as nn
 
