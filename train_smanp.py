@@ -1,7 +1,7 @@
 # -*- coding : utf-8 -*-
 
-from dataloader_anp import DatasetGP, DatasetGP_test, data_load
-from model_anp import SpatialNeuralProcess, Criterion
+from dataloader_smanp import DatasetGP, DatasetGP_test, data_load
+from model_smanp import SpatialNeuralProcess, Criterion
 from tensorboardX import SummaryWriter
 import torch as torch
 import torch.optim as optim
