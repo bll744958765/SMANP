@@ -27,7 +27,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
   Since our real data is confidential, We uploaded the modified reservoir thickness prediction dataset  to help you to run  the code. This leads to the difference between your running results and the description in the manuscript.
   The data set is data_reservoir, which includes 459 logging data, and each logging is given an ID number. you can  run split.py to  split data.csv into the training set and test set according to different proportions to verify the effect of the network. They include 14 auxiliary variables such as Line, CMP, Freq, and so on. Please refer to the manuscript for the actual significance of auxiliary variables. The reservoir thickness value is our prediction variable. SValue in training set and test set is known.
 ## Implementation of SMANP on simulation dataset
- You can run split.py to split train_simulation.csv into train.csv and valid.csv. Then you can run train_smanp.py to realize SMANP.The performance of SMANP on the test_simulation.csv is shown in Table1.
+You can run split.py to load train_simulation and split it into training and validation sets for SMANP to learn. test_simulation.CSV is a new simulation data set that can be used to test the performance of SMANP。 The performance of SMANP on the test_simulation.csv is shown in Table1 and Figure 2.
 
 <table>
     <tr>
@@ -91,4 +91,6 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
     </tr>
  
 </table>
+
+![simulation](https://user-images.githubusercontent.com/92556725/226331992-52f640bc-92e1-4cd8-98f4-182d04721c53.png)
 
