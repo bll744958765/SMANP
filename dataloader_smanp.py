@@ -1,7 +1,7 @@
 # -*- coding : utf-8 -*-
 
 """
-数据生成
+generate data
 """
 
 from torch.utils.data import Dataset
