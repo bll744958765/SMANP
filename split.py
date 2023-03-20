@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 #Split training set and test set Randomly
 
-data_frame = pd.read_csv('./data.csv')
+data_frame = pd.read_csv('./train_simulation.csv')
 all_data = np.array(data_frame)
 
 train_data, valid_data = train_test_split(all_data, test_size=0.7)
