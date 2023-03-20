@@ -92,5 +92,5 @@ You can run split.py to load train_simulation and split it into training and val
  
 </table>
 
-![simulation](https://user-images.githubusercontent.com/92556725/226331992-52f640bc-92e1-4cd8-98f4-182d04721c53.png)
+![simulation](https://user-images.githubusercontent.com/92556725/226334344-f9df5dcc-d096-47e3-893b-49fe7342553f.png)
 
