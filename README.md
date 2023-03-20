@@ -41,7 +41,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
    </tr>
    <tr>
         <td rowspan="3">Valid dataset</td>    
-        <td>10\%</td> 
+        <td>0.1</td> 
         <td>1.1691</td> 
         <td>1.4809</td> 
         <td>0.7937</td> 
@@ -49,7 +49,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
         <td>0.1856</td> 
     </tr>
     <tr>
-        <td>30</td> 
+        <td>0.3</td> 
         <td>1.0562</td>  
         <td>1.3351</td> 
       	 <td>0.8346</td>
@@ -57,7 +57,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
         <td>0.1614</td> 
     </tr>
     <tr>
-        <td>50</td> 
+        <td>0.5</td> 
         <td>1.0477</td>  
         <td>1.3048</td> 
       	 <td>0.8412</td> 
@@ -66,7 +66,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
     </tr>
     <tr>
        <td rowspan="3">Test dataset</td>    
-  		   <td>10\%</td> 
+  		   <td>0.1</td> 
       	<td>1.1584</td> 
        <td>1.4629</td> 
        <td>0.7908</td> 
@@ -74,7 +74,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
        <td>0.1858</td> 
     </tr>
     <tr>
-        <td>30\%</td> 
+        <td>0.3</td> 
         <td>1.0607</td>  
         <td>1.3395</td> 
       	 <td>0.8252</td> 
@@ -82,7 +82,7 @@ We demonstrate the SMANP’s effectiveness and robustness on simulated datasets 
       	 <td>0.1624</td>
     </tr>
     <tr>
-        <td>50\%</td> 
+        <td>0.5</td> 
         <td>1.0669</td>  
         <td>1.3155</td> 
       	 <td>0.8330</td> 
