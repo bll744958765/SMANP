@@ -26,7 +26,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 def data_load():
     train_data = pd.read_csv('./train.csv')   #training set
     valid_data = pd.read_csv('./valid.csv')   #valid set
-    # valid_data = pd.read_csv('./test.csv')  #test set
+    # valid_data = pd.read_csv('./test_simulation.csv')  #test set
     train_data = np.array(train_data)
     valid_data = np.array(valid_data)
     train_x = train_data[:, 1:6]
