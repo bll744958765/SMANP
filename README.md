@@ -1,6 +1,6 @@
 
 # A Few-shot Learning Method for Spatial Regression
-Li-Li Bao, Jiang-She Zhang, Chun-Xia Zhang, Rui Guob
+Li-Li Bao,  Chun-Xia Zhang, Jiang-She Zhang, Rui Guo， Cheng-Li Tan
 
  This code implemented by Li-Li Bao for  A Few-shot Learning Method for Spatial Regressionis is based on 
  
