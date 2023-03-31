@@ -183,6 +183,7 @@ class Criterion(nn.Module):
         """
         loss = 0.0
         bs = mu.shape[0]
+        nt = mu.shape[1]
         for i in range(bs):
             #
             dist1 = torch.distributions.multivariate_normal.MultivariateNormal(loc=mu[i],
@@ -196,7 +197,7 @@ class Criterion(nn.Module):
             poster = dist1.sample().unsqueeze(0)  # Prior sampling
             kl_loss = self.kl_div(torch.log_softmax(poster[i], -1), torch.softmax(prior[i], -1))
             log_prob = dist1.log_prob(target_y[i])
-            loss += -(log_prob - kl_loss)
-        loss = loss / len(mu)
+            loss += -(log_prob/nt - kl_loss)
+        loss = loss
 
         return loss
