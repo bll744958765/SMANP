@@ -36,7 +36,7 @@ def set_seed(seed=42):
 
 
 def main():
-    set_seed()
+    set_seed(42)
     n_epoches = 1000
     n_tasks = 30
     batch_size = 1
@@ -65,35 +65,33 @@ def main():
         val_pred_y, val_var_y, val_target_id, val_target_y, val_loss, valid_r2 = val_runner(
             model, testloader, criterion)
        # To make the model results more reliable, record the optimal results after iteration of a certain epoch
-        if epoch >50:
-            if R_square <= valid_r2 or (epoch + 1) == n_epoches:
-                R_square = valid_r2
-                train_mse = (torch.sum((target_y - mean_y) ** 2)) / len(target_y)
-                train_rmse = sqrt(train_mse)
-                train_mae = (torch.sum(torch.absolute(target_y - mean_y))) / len(target_y)
-                train_r2 = 1 - ((torch.sum((target_y - mean_y) ** 2)) / torch.sum(
-                    (target_y - target_y.mean()) ** 2))
-                valid_mse = (torch.sum((val_target_y - val_pred_y) ** 2)) / len(val_target_y)
-                valid_rmse = sqrt(valid_mse)
-                valid_mae = (torch.sum(torch.absolute(val_target_y - val_pred_y))) / len(val_target_y)
+    
+        if R_square <= valid_r2 or (epoch + 1) == n_epoches:
+            R_square = valid_r2
+            train_mse = (torch.sum((target_y - mean_y) ** 2)) / len(target_y)
+            train_rmse = sqrt(train_mse)
+            train_mae = (torch.sum(torch.absolute(target_y - mean_y))) / len(target_y)
+            train_r2 = 1 - ((torch.sum((target_y - mean_y) ** 2)) / torch.sum(
+                (target_y - target_y.mean()) ** 2))
+            valid_mse = (torch.sum((val_target_y - val_pred_y) ** 2)) / len(val_target_y)
+            valid_rmse = sqrt(valid_mse)
+            valid_mae = (torch.sum(torch.absolute(val_target_y - val_pred_y))) / len(val_target_y)
 
-                valid_r2 = 1 - ((torch.sum((val_target_y - val_pred_y) ** 2)) / torch.sum(
-                    (val_target_y - val_target_y.mean()) ** 2))
-                torch.save({'model': model.state_dict(),
-                            'optimizer': optimizer.state_dict()},
-                           os.path.join('checkpoint_anp', 'checkpoint_%d.pth.tar' % (epoch + 1)))
-                print(
-                    "Train Epoch: {} \t Lr:{:.4f},train loss: {:.4f},train_mae: {:.4f},train_mse: {:.4f}, train_rmse: {:.4f},train_r2: {:.4f}".format(
-                        epoch + 1, optimizer.state_dict()['param_groups'][0]['lr'], loss, train_mae, train_mse, train_rmse,
-                        train_r2))
-                print(
-                    "Valid Epoch: {} \t Lr:{:.4f},valid loss: {:.4f},valid_mae: {:.4f},valid_mse: {:.4f}, valid_rmse: {"
-                    ":.4f},valid_r2: {:.4f}".
-                    format(epoch + 1, optimizer.state_dict()['param_groups'][0]['lr'], val_loss, valid_mae, valid_mse,
-                           valid_rmse, valid_r2))
-                torch.save({'model': model.state_dict(),
-                            'optimizer': optimizer.state_dict()},
-                           os.path.join('checkpoint_anp', 'checkpoint_%d.pth.tar' % (epoch + 1)))
+            valid_r2 = 1 - ((torch.sum((val_target_y - val_pred_y) ** 2)) / torch.sum(
+                (val_target_y - val_target_y.mean()) ** 2))
+            torch.save({'model': model.state_dict(),
+                        'optimizer': optimizer.state_dict()},
+                       os.path.join('checkpoint_anp', 'checkpoint_%d.pth.tar' % (epoch + 1)))
+            print(
+                "Train Epoch: {} \t Lr:{:.4f},train loss: {:.4f},train_mae: {:.4f},train_mse: {:.4f}, train_rmse: {:.4f},train_r2: {:.4f}".format(
+                    epoch + 1, optimizer.state_dict()['param_groups'][0]['lr'], loss, train_mae, train_mse, train_rmse,
+                    train_r2))
+            print(
+                "Valid Epoch: {} \t Lr:{:.4f},valid loss: {:.4f},valid_mae: {:.4f},valid_mse: {:.4f}, valid_rmse: {"
+                ":.4f},valid_r2: {:.4f}".
+                format(epoch + 1, optimizer.state_dict()['param_groups'][0]['lr'], val_loss, valid_mae, valid_mse,
+                       valid_rmse, valid_r2))
+            
         if (epoch + 1) % 50 == 0:
             print("Train Epoch: {} \t Lr:{:.4f},train loss: {:.4f},train_r2: {:.3f}".format(
                 epoch + 1, optimizer.state_dict()['param_groups'][0]['lr'], loss,train_r2))
