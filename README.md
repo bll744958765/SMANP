@@ -68,7 +68,7 @@ You can run split.py to load train_simulation and split it into training and val
         <td>1.3048</td> 
       	 <td>0.8412</td> 
         <td>0.9161</td> 
-      	 <td>0.1523</td>
+      	 <td>0.1883</td>
     </tr>
     <tr>
        <td rowspan="3">Test dataset</td>    
@@ -89,11 +89,11 @@ You can run split.py to load train_simulation and split it into training and val
     </tr>
     <tr>
         <td>0.5</td> 
-        <td>1.0669</td>  
+        <td>1.0569</td>  
         <td>1.3155</td> 
       	 <td>0.8330</td> 
         <td>0.9115</td> 
-      	 <td>0.1589</td>
+      	 <td>0.1889</td>
     </tr>
  
 </table>
