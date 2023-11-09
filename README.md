@@ -29,7 +29,7 @@ We tested the effect of SDANP on synthetic and real spatial.
 
 ### Simulation studies
 We synthesised datasets with spatial correlation relationships and then make forecasts based on them. 
-We demonstrate the SMANP’s effectiveness and robustness on simulated datasets with various numbers of training examples. In the beginning, we divide a simulation dataset into a training and validation set, with training being performed on the training set and validation being performed on the validation dataset. Then, we use the finest trained weights to test on the new simulation dataset, i.e., the test set.
+We demonstrate the SDANP’s effectiveness and robustness on synthesised datasets with various numbers of training examples. In the beginning, we divide a synthesised dataset into a training and validation set, with training being performed on the training set and validation being performed on the validation dataset. Then, we use the finest trained weights to test on the new synthesised dataset, i.e., the test set.
 
 
 ## Implementation of SDANP on simulation dataset
