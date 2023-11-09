@@ -9,7 +9,7 @@ LiLi Bao,  ChunXia Zhang, JiangShe Zhang, Rui Guo, ChengLi Tan, Kai Sun
   **python 3.8**. 
   
   **GPU is NVIDIA GeForce RTX 3080**.
-## The structure of our SMANP:
+## The structure of our SDANP:
   Given spatial data samples with auxiliary explanatory variables and target response variables observed at a small set of spatial locations, the spatial prediction tasks aim to learn a model with this labeled dataset to predict the target variable when the values of the spatial and auxiliary variables are given.
 There are many deep learning methods that have achieved impressive success in spatial small sample prediction tasks. 
 However, these methods focus more on extracting information from auxiliary variables and ignore the spatial dependencies contained in spatial data, which may result in suboptimal performance for spatial prediction tasks. 
