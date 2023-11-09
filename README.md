@@ -35,68 +35,68 @@ We demonstrate the SDANP’s effectiveness and robustness on synthesised dataset
 ## Implementation of SDANP on simulation dataset
 You can run split.py to load train_simulation and split it into training and validation sets for SMANP to learn. test_simulation.CSV is a new simulation data set that can be used to test the performance of SDANP。 The performance of SDANP on the test_simulation.csv is shown in Table1 and Figure 2.
 
-               <table>
-                   <tr>
-                       <td>Dataset</td> 
-                       <td>Ratio</td> 
-                       <td>MAE</td> 
-                       <td>RMSE</td> 
-                       <td>R^2</td> 
-                       <td>CCC</td> 
-                       <td>Var</td> 
-                  </tr>
-                  <tr>
-                       <td rowspan="3">Valid dataset</td>    
-                       <td>0.1</td> 
-                       <td>1.1691</td> 
-                       <td>1.4809</td> 
-                       <td>0.7937</td> 
-                      	<td>0.8859</td> 
-                       <td>0.1856</td> 
-                   </tr>
-                   <tr>
-                       <td>0.3</td> 
-                       <td>1.0562</td>  
-                       <td>1.3351</td> 
-                     	 <td>0.8346</td>
-                       <td>0.9126</td> 
-                       <td>0.1614</td> 
-                   </tr>
-                   <tr>
-                       <td>0.5</td> 
-                       <td>1.0477</td>  
-                       <td>1.3048</td> 
-                     	 <td>0.8412</td> 
-                       <td>0.9161</td> 
-                     	 <td>0.1883</td>
-                   </tr>
-                   <tr>
-                      <td rowspan="3">Test dataset</td>    
-                 		   <td>0.1</td> 
-                     	<td>1.1584</td> 
-                      <td>1.4629</td> 
-                      <td>0.7908</td> 
-                      <td>0.8833</td> 
-                      <td>0.1858</td> 
-                   </tr>
-                   <tr>
-                       <td>0.3</td> 
-                       <td>1.0607</td>  
-                       <td>1.3395</td> 
-                     	 <td>0.8252</td> 
-                       <td>0.9062</td> 
-                     	 <td>0.1624</td>
-                   </tr>
-                   <tr>
-                       <td>0.5</td> 
-                       <td>1.0569</td>  
-                       <td>1.3155</td> 
-                     	 <td>0.8330</td> 
-                       <td>0.9115</td> 
-                     	 <td>0.1889</td>
-                   </tr>
-                
-               </table>
+          <table>
+              <tr>
+                  <td>Dataset</td> 
+                  <td>Ratio</td> 
+                  <td>MAE</td> 
+                  <td>RMSE</td> 
+                  <td>R^2</td> 
+                  <td>CCC</td> 
+                  <td>Var</td> 
+             </tr>
+             <tr>
+                  <td rowspan="3">Valid dataset</td>    
+                  <td>0.1</td> 
+                  <td>1.1691</td> 
+                  <td>1.4809</td> 
+                  <td>0.7937</td> 
+                  <td>0.8859</td> 
+                  <td>0.1856</td> 
+              </tr>
+              <tr>
+                  <td>0.3</td> 
+                  <td>1.0562</td>  
+                  <td>1.3351</td> 
+                  <td>0.8346</td>
+                  <td>0.9126</td> 
+                  <td>0.1614</td> 
+              </tr>
+              <tr>
+                  <td>0.5</td> 
+                  <td>1.0477</td>  
+                  <td>1.3048</td> 
+                  <td>0.8412</td> 
+                  <td>0.9161</td> 
+                  <td>0.1883</td>
+              </tr>
+              <tr>
+                 <td rowspan="3">Test dataset</td>    
+                 <td>0.1</td> 
+                 <td>1.1584</td> 
+                 <td>1.4629</td> 
+                 <td>0.7908</td> 
+                 <td>0.8833</td> 
+                 <td>0.1858</td> 
+              </tr>
+              <tr>
+                  <td>0.3</td> 
+                  <td>1.0607</td>  
+                  <td>1.3395</td> 
+                  <td>0.8252</td> 
+                  <td>0.9062</td> 
+                  <td>0.1624</td>
+              </tr>
+              <tr>
+                  <td>0.5</td> 
+                  <td>1.0569</td>  
+                  <td>1.3155</td> 
+                  <td>0.8330</td> 
+                  <td>0.9115</td> 
+                  <td>0.1889</td>
+              </tr>
+           
+          </table>
 
 ![simulation](https://user-images.githubusercontent.com/92556725/226334344-f9df5dcc-d096-47e3-893b-49fe7342553f.png)
 
