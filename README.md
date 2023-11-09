@@ -10,7 +10,7 @@ LiLi Bao,  ChunXia Zhang, JiangShe Zhang, Rui Guo, ChengLi Tan, Kai Sun
   
   **GPU is NVIDIA GeForce RTX 3080**.
 ## The structure of our SDANP:
-  Given spatial data samples with auxiliary explanatory variables and target response variables observed at a small set of spatial locations, the spatial prediction tasks aim to learn a model with this labeled dataset to predict the target variable when the values of the spatial and auxiliary variables are given.
+ Given spatial data samples with auxiliary explanatory variables and target response variables observed at a small set of spatial locations, the spatial prediction tasks aim to learn a model with this labeled dataset to predict the target variable when the values of the spatial and auxiliary variables are given.
 There are many deep learning methods that have achieved impressive success in spatial small sample prediction tasks. 
 However, these methods focus more on extracting information from auxiliary variables and ignore the spatial dependencies contained in spatial data, which may result in suboptimal performance for spatial prediction tasks. 
 To alleviate this problem, in this paper we propose a Spatial Dual-branch Attention Neural Process (SDANP) model, which decouples the input variables into spatial and auxiliary variables and uses two parallel modules to extract the target-related information from the spatial and auxiliary variables, respectively.
